@@ -1,0 +1,9 @@
+import bodyParser from "body-parser";
+import express from "express";
+import { Application } from "express";
+
+var app = express();
+
+export default class ExpressServer {
+    
+}

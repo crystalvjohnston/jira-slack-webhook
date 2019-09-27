@@ -1,0 +1,1 @@
+web: node jira-slack.js
