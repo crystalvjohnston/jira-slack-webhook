@@ -13,7 +13,7 @@ class Controller {
             jiraURL: issue.self.split('/rest/api')[0]
         }
 
-        service.create(JiraObject).then((r) =>{
+        service.create(JiraObject).then((r:any) =>{
         if(!r){
             res
             .status(HttpStatus.IM_A_TEAPOT).end()
@@ -22,9 +22,9 @@ class Controller {
             .status(HttpStatus.OK).end()
         });
     };
-    get(req: Request, res: Response):void {
-        service.get().then((r) => res.sendStatus(HttpStatus.OK));
-    }
+    // get(req: Request, res: Response):void {
+    //     service.get().then((r) => res.sendStatus(HttpStatus.OK));
+    // }
 }
 
 export default new Controller();

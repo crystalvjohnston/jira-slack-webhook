@@ -1,25 +1,26 @@
 import { JiraObject } from "./interfaces";
-import request from "request"
+import * as request from "request-promise-native";
+
 
 class Service {
-    create(jiraObject: JiraObject): boolean {
+    async create(jiraObject: JiraObject): Promise<boolean | undefined> {
         const {issue, changeLog, user, jiraURL} = jiraObject;
 
         let sprintChanged = changeLog.items.find(item => item.field === "Sprint")
         let statusChanged = changeLog.items.find(item => item.field === "status")
         let addedToActiveSprint = false;
-        let newStatus ="";
+        let newStatus = "";
         if(sprintChanged){
           addedToActiveSprint = this.sprintChangedToActiveSprint(issue.fields.customfield_10910);
         }
         if(statusChanged){
-          newStatus = statusChanged.toString;
+          newStatus = statusChanged.toString || "";
         }
       
         if(sprintChanged || statusChanged){
           let text = "";
           if (addedToActiveSprint) {
-            text += `${user.displayName} added an issue to an active sprint: ${sprintChanged.toString}. `
+            text += `${user.displayName} added an issue to an active sprint: ${sprintChanged!.toString || "" }. `
           }
           if(newStatus && (newStatus === "To Do" || newStatus === "QE Blocked" || newStatus === "Blocked")){
             text += `${user.displayName} marked an issue as ${newStatus}.`
@@ -30,7 +31,7 @@ class Service {
               ...this.setPostData(issue,user,jiraURL),
               text
             }
-            return this.sentToSlack(postData)
+            return await this.sentToSlack(postData)
           }
         }else{
           console.log("Changes made that were not sent to Slack")
@@ -38,15 +39,15 @@ class Service {
         }
     }
       
-        sentToSlack(postData): boolean{
+        async sentToSlack(postData: any) {
           let options = {
             method: 'post',
             body: postData,
             json: true,
             url: process.env.SLACK_URL
-          }
+          } 
       
-          request(options, function(err, response, body) {
+          return await request.post(`${process.env.SLACK_URL}`, options, function(err, response, body) {
             if (err) {
               console.error('Error posting json: ', err)
               return false;
@@ -55,14 +56,13 @@ class Service {
               return true;
             }
           })
-          return false;
         }
       
         /*
           * Take an array of sprints (strings) and if you find one where state=active
           * then return true.
           */
-     sprintChangedToActiveSprint(sprints) {
+     sprintChangedToActiveSprint(sprints: any) {
           // its possible there are no sprints
           if (!sprints) {
             return false
@@ -76,7 +76,7 @@ class Service {
           return false
         }
       
-         setPostData(issue,user,jiraURL){
+         setPostData(issue: any,user: any ,jiraURL: any){
           return {
             attachments: [
               {
