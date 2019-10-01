@@ -1,1 +1,1 @@
-web: node jira-slack.js
+web: node index.js
