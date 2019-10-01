@@ -1,7 +1,7 @@
-import service from "./service";
+import service from "../service/service";
 import  {Request, Response}  from "express";
 import HttpStatus from "http-status-codes";
-import { JiraObject } from "./interfaces";
+import { JiraObject } from "../interfaces";
 
 class Controller {
     create(req: Request, res: Response):void {

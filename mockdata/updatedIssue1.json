@@ -1,0 +1,284 @@
+{
+    "timestamp": 1569291498011,
+    "webhookEvent": "jira:issue_updated",
+    "issue_event_type_name": "issue_updated",
+    "user": {
+        "self": "https://jira.company.com/rest/api/2/user?username=crystal.johnston",
+        "name": "crystal.johnston",
+        "key": "crystal.johnston",
+        "emailAddress": "crystalvjohnston@gmail.com",
+        "avatarUrls": {
+            "48x48": "https://jira.company.com/secure/useravatar?avatarId=10142",
+            "24x24": "https://jira.company.com/secure/useravatar?size=small&avatarId=10142",
+            "16x16": "https://jira.company.com/secure/useravatar?size=xsmall&avatarId=10142",
+            "32x32": "https://jira.company.com/secure/useravatar?size=medium&avatarId=10142"
+        },
+        "displayName": "Crystal Johnston",
+        "active": true,
+        "timeZone": "Pacific/Auckland"
+    },
+    "issue": {
+        "id": "86215",
+        "self": "https://jira.company.com/rest/api/2/issue/86215",
+        "key": "VRF-799",
+        "fields": {
+            "issuetype": {
+                "self": "https://jira.company.com/rest/api/2/issuetype/3",
+                "id": "3",
+                "description": "A task or story that is not end user related",
+                "iconUrl": "https://jira.company.com/secure/viewavatar?size=xsmall&avatarId=12238&avatarType=issuetype",
+                "name": "Technical Task/story",
+                "subtask": false,
+                "avatarId": 12238
+            },
+            "customfield_10070": null,
+            "timespent": 10800,
+            "customfield_10030": "1. Create a service that receive incoming web-hooks from jira\r\n2. Parse the Webhook and check if the task I is in some sprint\r\n3. If the task is in some sprint send an slack notification to our group\r\n4. We should send to slack when the tasks is moved to TODO, Ready For Testing, Blocked or QE Blocked\r\n5.Â *Details*: Summary, Status, Story Point.Â ",
+            "project": {
+                "self": "https://jira.company.com/rest/api/2/project/12841",
+                "id": "12841",
+                "key": "VRF",
+                "name": "Internal Tooling",
+                "avatarUrls": {
+                    "48x48": "https://jira.company.com/secure/projectavatar?pid=12841&avatarId=13020",
+                    "24x24": "https://jira.company.com/secure/projectavatar?size=small&pid=12841&avatarId=13020",
+                    "16x16": "https://jira.company.com/secure/projectavatar?size=xsmall&pid=12841&avatarId=13020",
+                    "32x32": "https://jira.company.com/secure/projectavatar?size=medium&pid=12841&avatarId=13020"
+                }
+            },
+            "fixVersions": [],
+            "customfield_10110": null,
+            "aggregatetimespent": 10800,
+            "resolution": null,
+            "customfield_10113": 1,
+            "customfield_11314": null,
+            "customfield_11317": {
+                "self": "https://jira.company.com/rest/api/2/customFieldOption/10771",
+                "value": "0%",
+                "id": "10771"
+            },
+            "customfield_13417": null,
+            "resolutiondate": null,
+            "workratio": 9223372036854776000,
+            "lastViewed": "2019-09-24T14:16:55.938+1200",
+            "watches": {
+                "self": "https://jira.company.com/rest/api/2/issue/VRF-799/watchers",
+                "watchCount": 1,
+                "isWatching": true
+            },
+            "customfield_13010": "{summaryBean=com.atlassian.jira.plugin.devstatus.rest.SummaryBean@da231a6[summary={pullrequest=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@59db7787[overall=PullRequestOverallBean{stateCount=0, state='OPEN', details=PullRequestOverallDetails{openCount=0, mergedCount=0, declinedCount=0}},byInstanceType={}], build=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@513861ee[overall=com.atlassian.jira.plugin.devstatus.summary.beans.BuildOverallBean@53dd4301[failedBuildCount=0,successfulBuildCount=0,unknownBuildCount=0,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], review=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@2b0d9dd7[overall=com.atlassian.jira.plugin.devstatus.summary.beans.ReviewsOverallBean@3ca632d8[stateCount=0,state=<null>,dueDate=<null>,overDue=false,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], deployment-environment=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@2e0303b3[overall=com.atlassian.jira.plugin.devstatus.summary.beans.DeploymentOverallBean@17ff8839[topEnvironments=[],showProjects=false,successfulCount=0,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], repository=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@505b4c34[overall=com.atlassian.jira.plugin.devstatus.summary.beans.CommitOverallBean@5de68415[count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], branch=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@6bce1a81[overall=com.atlassian.jira.plugin.devstatus.summary.beans.BranchOverallBean@9bf981[count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}]},errors=[],configErrors=[]], devSummaryJson={\"cachedValue\":{\"errors\":[],\"configErrors\":[],\"summary\":{\"pullrequest\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"stateCount\":0,\"state\":\"OPEN\",\"details\":{\"openCount\":0,\"mergedCount\":0,\"declinedCount\":0,\"total\":0},\"open\":true},\"byInstanceType\":{}},\"build\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"failedBuildCount\":0,\"successfulBuildCount\":0,\"unknownBuildCount\":0},\"byInstanceType\":{}},\"review\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"stateCount\":0,\"state\":null,\"dueDate\":null,\"overDue\":false,\"completed\":false},\"byInstanceType\":{}},\"deployment-environment\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"topEnvironments\":[],\"showProjects\":false,\"successfulCount\":0},\"byInstanceType\":{}},\"repository\":{\"overall\":{\"count\":0,\"lastUpdated\":null},\"byInstanceType\":{}},\"branch\":{\"overall\":{\"count\":0,\"lastUpdated\":null},\"byInstanceType\":{}}}},\"isStale\":false}}",
+            "created": "2019-09-23T16:33:05.585+1200",
+            "customfield_13210": "0.0",
+            "priority": {
+                "self": "https://jira.company.com/rest/api/2/priority/4",
+                "iconUrl": "https://jira.company.com/images/icons/priorities/minor.svg",
+                "name": "Minor",
+                "id": "4"
+            },
+            "customfield_13411": null,
+            "customfield_11312": "1|i028mw:",
+            "labels": [],
+            "customfield_12712": null,
+            "customfield_12911": null,
+            "timeestimate": 0,
+            "aggregatetimeoriginalestimate": 0,
+            "versions": [],
+            "issuelinks": [],
+            "assignee": {
+                "self": "https://jira.company.com/rest/api/2/user?username=crystal.johnston",
+                "name": "crystal.johnston",
+                "key": "crystal.johnston",
+                "emailAddress": "crystalvjohnston@gmail.com",
+                "avatarUrls": {
+                    "48x48": "https://jira.company.com/secure/useravatar?avatarId=10142",
+                    "24x24": "https://jira.company.com/secure/useravatar?size=small&avatarId=10142",
+                    "16x16": "https://jira.company.com/secure/useravatar?size=xsmall&avatarId=10142",
+                    "32x32": "https://jira.company.com/secure/useravatar?size=medium&avatarId=10142"
+                },
+                "displayName": "Crystal Johnston",
+                "active": true,
+                "timeZone": "Pacific/Auckland"
+            },
+            "updated": "2019-09-24T14:18:18.001+1200",
+            "status": {
+                "self": "https://jira.company.com/rest/api/2/status/3",
+                "description": "",
+                "iconUrl": "https://jira.company.com/",
+                "name": "In Progress",
+                "id": "3",
+                "statusCategory": {
+                    "self": "https://jira.company.com/rest/api/2/statuscategory/4",
+                    "id": 4,
+                    "key": "indeterminate",
+                    "colorName": "yellow",
+                    "name": "In Progress"
+                }
+            },
+            "components": [],
+            "timeoriginalestimate": 0,
+            "description": null,
+            "customfield_12510": null,
+            "timetracking": {
+                "originalEstimate": "0m",
+                "remainingEstimate": "0m",
+                "timeSpent": "3h",
+                "originalEstimateSeconds": 0,
+                "remainingEstimateSeconds": 0,
+                "timeSpentSeconds": 10800
+            },
+            "attachment": [],
+            "aggregatetimeestimate": 0,
+            "summary": "Create a slack/jira integration",
+            "creator": {
+                "self": "https://jira.company.com/rest/api/2/user?username=crystal.johnston",
+                "name": "crystal.johnston",
+                "key": "crystal.johnston",
+                "emailAddress": "crystalvjohnston@gmail.com",
+                "avatarUrls": {
+                    "48x48": "https://jira.company.com/secure/useravatar?avatarId=10142",
+                    "24x24": "https://jira.company.com/secure/useravatar?size=small&avatarId=10142",
+                    "16x16": "https://jira.company.com/secure/useravatar?size=xsmall&avatarId=10142",
+                    "32x32": "https://jira.company.com/secure/useravatar?size=medium&avatarId=10142"
+                },
+                "displayName": "Crystal Johnston",
+                "active": true,
+                "timeZone": "Pacific/Auckland"
+            },
+            "subtasks": [],
+            "customfield_13430": [
+                {
+                    "self": "https://jira.company.com/rest/api/2/customFieldOption/12258",
+                    "value": "Not Needed/Started",
+                    "id": "12258"
+                }
+            ],
+            "customfield_11010": null,
+            "customfield_11011": null,
+            "reporter": {
+                "self": "https://jira.company.com/rest/api/2/user?username=crystal.johnston",
+                "name": "crystal.johnston",
+                "key": "crystal.johnston",
+                "emailAddress": "crystalvjohnston@gmail.com",
+                "avatarUrls": {
+                    "48x48": "https://jira.company.com/secure/useravatar?avatarId=10142",
+                    "24x24": "https://jira.company.com/secure/useravatar?size=small&avatarId=10142",
+                    "16x16": "https://jira.company.com/secure/useravatar?size=xsmall&avatarId=10142",
+                    "32x32": "https://jira.company.com/secure/useravatar?size=medium&avatarId=10142"
+                },
+                "displayName": "Crystal Johnston",
+                "active": true,
+                "timeZone": "Pacific/Auckland"
+            },
+            "customfield_13431": null,
+            "aggregateprogress": {
+                "progress": 10800,
+                "total": 10800,
+                "percent": 100
+            },
+            "customfield_11211": null,
+            "customfield_13510": null,
+            "customfield_12811": null,
+            "customfield_13427": {
+                "self": "https://jira.company.com/rest/api/2/customFieldOption/12248",
+                "value": "High",
+                "id": "12248"
+            },
+            "customfield_12810": null,
+            "environment": null,
+            "customfield_12813": null,
+            "customfield_10910": [
+                "com.atlassian.greenhopper.service.sprint.Sprint@5d2af540[id=1255,rapidViewId=323,state=ACTIVE,name=2019.3 Sp5 INTO,startDate=2019-09-11T12:43:19.904+12:00,endDate=2019-10-01T16:11:00.000+13:00,completeDate=<null>,sequence=1255,goal=Full Regression]"
+            ],
+            "customfield_12812": null,
+            "customfield_10911": null,
+            "customfield_10713": "9223372036854775807",
+            "customfield_12814": null,
+            "customfield_10718": null,
+            "progress": {
+                "progress": 10800,
+                "total": 10800,
+                "percent": 100
+            },
+            "comment": {
+                "comments": [],
+                "maxResults": 0,
+                "total": 0,
+                "startAt": 0
+            },
+            "votes": {
+                "self": "https://jira.company.com/rest/api/2/issue/VRF-799/votes",
+                "votes": 0,
+                "hasVoted": false
+            },
+            "worklog": {
+                "startAt": 0,
+                "maxResults": 20,
+                "total": 1,
+                "worklogs": [
+                    {
+                        "self": "https://jira.company.com/rest/api/2/issue/86215/worklog/199490",
+                        "author": {
+                            "self": "https://jira.company.com/rest/api/2/user?username=crystal.johnston",
+                            "name": "crystal.johnston",
+                            "key": "crystal.johnston",
+                            "emailAddress": "crystalvjohnston@gmail.com",
+                            "avatarUrls": {
+                                "48x48": "https://jira.company.com/secure/useravatar?avatarId=10142",
+                                "24x24": "https://jira.company.com/secure/useravatar?size=small&avatarId=10142",
+                                "16x16": "https://jira.company.com/secure/useravatar?size=xsmall&avatarId=10142",
+                                "32x32": "https://jira.company.com/secure/useravatar?size=medium&avatarId=10142"
+                            },
+                            "displayName": "Crystal Johnston",
+                            "active": true,
+                            "timeZone": "Pacific/Auckland"
+                        },
+                        "updateAuthor": {
+                            "self": "https://jira.company.com/rest/api/2/user?username=crystal.johnston",
+                            "name": "crystal.johnston",
+                            "key": "crystal.johnston",
+                            "emailAddress": "crystalvjohnston@gmail.com",
+                            "avatarUrls": {
+                                "48x48": "https://jira.company.com/secure/useravatar?avatarId=10142",
+                                "24x24": "https://jira.company.com/secure/useravatar?size=small&avatarId=10142",
+                                "16x16": "https://jira.company.com/secure/useravatar?size=xsmall&avatarId=10142",
+                                "32x32": "https://jira.company.com/secure/useravatar?size=medium&avatarId=10142"
+                            },
+                            "displayName": "Crystal Johnston",
+                            "active": true,
+                            "timeZone": "Pacific/Auckland"
+                        },
+                        "comment": "",
+                        "created": "2019-09-23T16:49:42.284+1200",
+                        "updated": "2019-09-23T16:49:42.284+1200",
+                        "started": "2019-09-23T16:49:00.000+1200",
+                        "timeSpent": "3h",
+                        "timeSpentSeconds": 10800,
+                        "id": "199490",
+                        "issueId": "86215"
+                    }
+                ]
+            }
+        }
+    },
+    "changelog": {
+        "id": "952526",
+        "items": [
+            {
+                "field": "Story Points",
+                "fieldtype": "custom",
+                "from": null,
+                "fromString": "2",
+                "to": null,
+                "toString": "1"
+            },
+            {
+                "field": "status",
+                "fieldtype": "jira",
+                "from": "10125",
+                "fromString": "Backlog",
+                "to": "10022",
+                "toString": "To Do"
+            }
+        ]
+    }
+}

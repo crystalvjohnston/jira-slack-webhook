@@ -4,7 +4,7 @@ import { Application } from "express";
 import http from "http";
 import swaggerUi from "swagger-ui-express";
 import path from "path";
-import router from "./router"
+import router from "./controller/router"
 
 var app = express();
 

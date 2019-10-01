@@ -14,7 +14,7 @@
     },
     "include": [
       "typings.d.ts",
-      "*.ts"
+      "*.ts", "server/interfaces.ts", "server/server.ts", "server/controller/controller.ts", "service/service.ts", "server/router.ts", "server/server.ts"
     ],
     "exclude": [
       "node_modules"

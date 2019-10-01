@@ -1,4 +1,4 @@
-import { JiraObject } from "./interfaces";
+import { JiraObject } from "../interfaces";
 import * as request from "request-promise-native";
 
 
