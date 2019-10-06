@@ -23,8 +23,8 @@ export default class ExpressServer {
         );
         //app.use(cookieParser(process.env.SESSION_SECRET));
         app.use(express.static(`${root}/public`));
-
         const apiSpecPath = path.join(__dirname, "api.yml");
+
         app.use(process.env.OPENAPI_SPEC || "/spec", express.static(apiSpecPath));
 
         const options = {

@@ -8,7 +8,7 @@ const express_1 = __importDefault(require("express"));
 const http_1 = __importDefault(require("http"));
 const swagger_ui_express_1 = __importDefault(require("swagger-ui-express"));
 const path_1 = __importDefault(require("path"));
-const router_1 = __importDefault(require("./router"));
+const router_1 = __importDefault(require("./controller/router"));
 var app = express_1.default();
 class ExpressServer {
     constructor() {
