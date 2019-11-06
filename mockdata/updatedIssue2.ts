@@ -1,7 +1,7 @@
-{
-    "timestamp": 1569283177226,
-    "webhookEvent": "jira:issue_created",
-    "issue_event_type_name": "issue_created",
+export const updatedIssue2 = {
+    "timestamp": 1569283453773,
+    "webhookEvent": "jira:issue_updated",
+    "issue_event_type_name": "issue_generic",
     "user": {
         "self": "https://jira.company.com/rest/api/2/user?username=crystal.johnston",
         "name": "crystal.johnston",
@@ -60,13 +60,13 @@
             "customfield_13417": null,
             "resolutiondate": null,
             "workratio": -1,
-            "lastViewed": null,
+            "lastViewed": "2019-09-24T12:04:13.761+1200",
             "watches": {
                 "self": "https://jira.company.com/rest/api/2/issue/VRF-803/watchers",
-                "watchCount": 0,
-                "isWatching": false
+                "watchCount": 1,
+                "isWatching": true
             },
-            "customfield_13010": "{summaryBean=com.atlassian.jira.plugin.devstatus.rest.SummaryBean@ca63c37[summary={pullrequest=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@2d5d57c5[overall=PullRequestOverallBean{stateCount=0, state='OPEN', details=PullRequestOverallDetails{openCount=0, mergedCount=0, declinedCount=0}},byInstanceType={}], build=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@6ab547c2[overall=com.atlassian.jira.plugin.devstatus.summary.beans.BuildOverallBean@2d91c62e[failedBuildCount=0,successfulBuildCount=0,unknownBuildCount=0,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], review=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@3becfd70[overall=com.atlassian.jira.plugin.devstatus.summary.beans.ReviewsOverallBean@10fc8fdb[stateCount=0,state=<null>,dueDate=<null>,overDue=false,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], deployment-environment=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@50375151[overall=com.atlassian.jira.plugin.devstatus.summary.beans.DeploymentOverallBean@73344dcf[topEnvironments=[],showProjects=false,successfulCount=0,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], repository=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@2f6f29a4[overall=com.atlassian.jira.plugin.devstatus.summary.beans.CommitOverallBean@5b19e9c5[count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], branch=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@314e862e[overall=com.atlassian.jira.plugin.devstatus.summary.beans.BranchOverallBean@6045fffd[count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}]},errors=[],configErrors=[]], devSummaryJson={\"cachedValue\":{\"errors\":[],\"configErrors\":[],\"summary\":{\"pullrequest\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"stateCount\":0,\"state\":\"OPEN\",\"details\":{\"openCount\":0,\"mergedCount\":0,\"declinedCount\":0,\"total\":0},\"open\":true},\"byInstanceType\":{}},\"build\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"failedBuildCount\":0,\"successfulBuildCount\":0,\"unknownBuildCount\":0},\"byInstanceType\":{}},\"review\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"stateCount\":0,\"state\":null,\"dueDate\":null,\"overDue\":false,\"completed\":false},\"byInstanceType\":{}},\"deployment-environment\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"topEnvironments\":[],\"showProjects\":false,\"successfulCount\":0},\"byInstanceType\":{}},\"repository\":{\"overall\":{\"count\":0,\"lastUpdated\":null},\"byInstanceType\":{}},\"branch\":{\"overall\":{\"count\":0,\"lastUpdated\":null},\"byInstanceType\":{}}}},\"isStale\":false}}",
+            "customfield_13010": "{summaryBean=com.atlassian.jira.plugin.devstatus.rest.SummaryBean@9dba007[summary={pullrequest=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@7625427f[overall=PullRequestOverallBean{stateCount=0, state='OPEN', details=PullRequestOverallDetails{openCount=0, mergedCount=0, declinedCount=0}},byInstanceType={}], build=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@7ce04753[overall=com.atlassian.jira.plugin.devstatus.summary.beans.BuildOverallBean@208ac40a[failedBuildCount=0,successfulBuildCount=0,unknownBuildCount=0,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], review=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@7fa4619f[overall=com.atlassian.jira.plugin.devstatus.summary.beans.ReviewsOverallBean@2f9516a3[stateCount=0,state=<null>,dueDate=<null>,overDue=false,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], deployment-environment=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@513106dd[overall=com.atlassian.jira.plugin.devstatus.summary.beans.DeploymentOverallBean@27ed2265[topEnvironments=[],showProjects=false,successfulCount=0,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], repository=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@7b99079e[overall=com.atlassian.jira.plugin.devstatus.summary.beans.CommitOverallBean@7cbe2640[count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], branch=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@25e0c0e4[overall=com.atlassian.jira.plugin.devstatus.summary.beans.BranchOverallBean@6bd03037[count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}]},errors=[],configErrors=[]], devSummaryJson={\"cachedValue\":{\"errors\":[],\"configErrors\":[],\"summary\":{\"pullrequest\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"stateCount\":0,\"state\":\"OPEN\",\"details\":{\"openCount\":0,\"mergedCount\":0,\"declinedCount\":0,\"total\":0},\"open\":true},\"byInstanceType\":{}},\"build\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"failedBuildCount\":0,\"successfulBuildCount\":0,\"unknownBuildCount\":0},\"byInstanceType\":{}},\"review\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"stateCount\":0,\"state\":null,\"dueDate\":null,\"overDue\":false,\"completed\":false},\"byInstanceType\":{}},\"deployment-environment\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"topEnvironments\":[],\"showProjects\":false,\"successfulCount\":0},\"byInstanceType\":{}},\"repository\":{\"overall\":{\"count\":0,\"lastUpdated\":null},\"byInstanceType\":{}},\"branch\":{\"overall\":{\"count\":0,\"lastUpdated\":null},\"byInstanceType\":{}}}},\"isStale\":false}}",
             "created": "2019-09-24T11:59:37.135+1200",
             "customfield_13210": "0.0",
             "priority": {
@@ -85,13 +85,13 @@
             "versions": [],
             "issuelinks": [],
             "assignee": null,
-            "updated": "2019-09-24T11:59:37.135+1200",
+            "updated": "2019-09-24T12:04:13.771+1200",
             "status": {
-                "self": "https://jira.company.com/rest/api/2/status/10125",
+                "self": "https://jira.company.com/rest/api/2/status/10022",
                 "description": "",
                 "iconUrl": "https://jira.company.com/",
-                "name": "Backlog",
-                "id": "10125",
+                "name": "To Do",
+                "id": "10022",
                 "statusCategory": {
                     "self": "https://jira.company.com/rest/api/2/statuscategory/2",
                     "id": 2,
@@ -192,5 +192,18 @@
                 "worklogs": []
             }
         }
+    },
+    "changelog": {
+        "id": "952497",
+        "items": [
+            {
+                "field": "status",
+                "fieldtype": "jira",
+                "from": "10125",
+                "fromString": "Backlog",
+                "to": "10022",
+                "toString": "To Do"
+            }
+        ]
     }
 }

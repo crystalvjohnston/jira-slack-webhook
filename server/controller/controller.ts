@@ -8,6 +8,7 @@ class Controller {
         const issue =  req.body.issue
         const JiraObject = {
             issue,
+            eventType: req.body.issue_event_type_name,
             changeLog: req.body.changelog,
             user: req.body.user,
             jiraURL: issue.self.split('/rest/api')[0]
@@ -16,7 +17,7 @@ class Controller {
         service.create(JiraObject).then((r:any) =>{
         if(!r){
             res
-            .status(HttpStatus.IM_A_TEAPOT).end()
+            .status(HttpStatus.BAD_REQUEST).end()
         }
         res
             .status(HttpStatus.OK).end()

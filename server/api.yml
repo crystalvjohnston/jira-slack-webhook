@@ -5,11 +5,6 @@ info:
   version: 1.0.0
 servers:
 - url: /
-tags:
-- name: Examples
-  description: Simple example endpoints
-- name: Specification
-  description: The swagger API specification
 paths:
   /jiraissue:
     post:

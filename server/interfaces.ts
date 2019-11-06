@@ -1,5 +1,6 @@
 export interface JiraObject {
-    issue: any
+    eventType: string;
+    issue: any;
     changeLog:ChangeLog;
     user: User;
     jiraURL: string;

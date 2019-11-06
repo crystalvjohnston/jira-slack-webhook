@@ -1,4 +1,4 @@
-{
+export const updatedIssue1 = {
     "timestamp": 1569291498011,
     "webhookEvent": "jira:issue_updated",
     "issue_event_type_name": "issue_updated",

@@ -31,7 +31,7 @@ class Service {
               ...this.setPostData(issue,user,jiraURL),
               text
             }
-            return await this.sentTo(postData)
+            return await this.sentToSlack(postData)
           }
         }else{
           console.log("Changes made that were not sent to Slack")
